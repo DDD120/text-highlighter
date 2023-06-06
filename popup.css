@@ -26,6 +26,6 @@
 }
 
 [type="checkbox"]:checked {
-  background-color: #5be3ca;
-  border-color: #5be3ca;
+  background-color: #222222;
+  border-color: #222222;
 }
