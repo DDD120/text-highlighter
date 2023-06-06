@@ -1,0 +1,12 @@
+{
+  "name": "text-highlighter",
+  "version": "1.0.0",
+  "description": "The text highlighter feature allows you to apply a highlighting style to selected text.",
+  "main": "content.js",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@webcomponents/custom-elements": "^1.6.0"
+  }
+}
