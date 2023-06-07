@@ -10,7 +10,7 @@ const template = `
     </div>
   </draggble-element>
 `
-const styledHighlighter = ({ display = "flex" }) => `
+const styledHighlighter = ({ display = "none" }) => `
   :host {
     position: relative;
     z-index: 9999;
@@ -58,7 +58,7 @@ class SelectedHighlighter extends HTMLElement {
 
   render() {
     this.attachShadow({ mode: "open" })
-    chrome.storage.sync.get(["onoff"], ({ onoff }) => {
+    chrome.storage.local.get(["onoff"], ({ onoff }) => {
       const style = document.createElement("style")
       style.textContent = styledHighlighter({
         display: onoff ? "flex" : "none",
